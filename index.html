@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HQ</title>
+    <style>
+        *{
+            margin: 0;
+            border: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            background-color: #222;
+            background: url('imagens/chat_bg.webp') repeat fixed;
+            background-size: contain;
+            font-family: sans-serif;
+        }
+        header.cabecalho{
+            background-color: #111;
+            color: aliceblue;
+            position: relative;
+        }
+        .cabecalho img{
+            width: 10%;
+        }
+        .cabecalho img, h3{
+            display: inline;
+            margin-left: 2%;
+        }
+        header > h3{
+            position: absolute;
+            top: 30%;
+            font-size: 1.5em;
+        }
+        section.chat{
+            
+        }
+        p{
+            background-color: rgb(134, 38, 0);
+            width: 60%;
+            margin: 2%;
+            padding: 2%;
+            box-shadow: 1px 1px 10px rgb(0, 0, 0);
+            color: #fff;
+        }
+        p.dir{
+            right: -36%;
+            position: relative;
+            border-radius: 20px 20px 0px 20px;
+        }
+        p.esq{
+            background-color: #222;
+            border-radius: 20px 20px 20px 0px;
+        }
+        footer.texto{
+            background-color: #111;
+            padding: 2%;
+        }
+        .txt-area{
+            width: 88%;
+            border-radius: 100px;
+            padding: 2%;
+            background-color: #999;
+            color: #fff;
+            border: 2px solid #000;
+        }
+        .enviar{
+            border-radius: 1000px;
+            padding: 2%;
+            margin-left: 1%;
+            color: #222;
+            font-size: 1.5em;
+        }                                                      
+    </style>
+</head>
+<body>
+    <main>
+        <header class="cabecalho">
+            <img src="imagens/avatar_amigo.png" alt="">
+            <h3>Nome</h3>
+        </header>
+        <section class="chat">
+            <p class="dir">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque reprehenderit deserunt facere, quasi unde non laborum laboriosam delectus nulla assumenda, voluptate sunt illo sequi, vel eligendi perspiciatis perferendis hic corrupti.
+            </p>
+            <p class="esq">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas odit quos perspiciatis ad vitae illo delectus? Consequuntur nisi aut, reprehenderit, veniam numquam unde accusamus provident dolor rerum eligendi autem. Mollitia.
+            </p>
+            <p class="dir">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque reprehenderit deserunt facere, quasi unde non laborum laboriosam delectus nulla assumenda, voluptate sunt illo sequi, vel eligendi perspiciatis perferendis hic corrupti.
+            </p>
+            <p class="esq">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas odit quos perspiciatis ad vitae illo delectus? Consequuntur nisi aut, reprehenderit, veniam numquam unde accusamus provident dolor rerum eligendi autem. Mollitia.
+            </p>
+            <p class="dir">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque reprehenderit deserunt facere, quasi unde non laborum laboriosam delectus nulla assumenda, voluptate sunt illo sequi, vel eligendi perspiciatis perferendis hic corrupti.
+            </p>
+            <p class="esq">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas odit quos perspiciatis ad vitae illo delectus? Consequuntur nisi aut, reprehenderit, veniam numquam unde accusamus provident dolor rerum eligendi autem. Mollitia.
+            </p>
+        </section>
+        <footer class="texto">
+            <input class="txt-area" type="text" value="Mensagem">
+            <button class="enviar" type="submit">>></button>
+        </footer>
+    </main>
+</body>
+</html>
