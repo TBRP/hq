@@ -5,106 +5,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/76b8420613.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>ChatApp</title>
     <style>
+        /* --- RESEAT --- */
         *{
             margin: 0;
-            border: 0;
             padding: 0;
+            border: 0;
             box-sizing: border-box;
         }
+        /* -- BODY -- */
         body{
+            position: relative;
+            height: 100vh;
             background-color: #222;
             color: #fff;
             font-family: sans-serif;
-            height: 100vh;
-            position: relative;
+            font-size: 1em;
         }
-        .box1{
+        /* -- MAIN -- */
+        main.chat{
+            position: relative;
+            height: 100%;
+            background-color: rgba(137, 43, 226, 0);
+        }
+        /* -- HEADER-- */
+        header.cabecalho{
             background-color: #000;
             position: absolute;
             width: 100%;
             height: 10%;
-            padding: 1%;
-            box-shadow: 1px 1px 15px #00000055;
-            top: 0;
         }
-        p.txt1{
-          border: 1px solid #ff000000;  
-          position: absolute;
-          height: 60%;
-          bottom: 0;
-          display: inline;
-          margin-left: 1%;
-          color: #fff;
-          font-size: 1em;
-        }
-        p.txt2{
-          border: 1px solid #1100ff00;  
-          position: absolute;
-          top: 23%;
-          width: 96%;
-          text-align: right;
-          font-size: 2em;
-        }
-        img{
+        header.cabecalho img{
             height: 100%;
-            border-radius: 100px;
         }
-        .mens{
-            padding: 1%;
-            background-color: #000;
-            bottom: 0;
-            padding: 2%;
-            position: sticky;
-            
+        .nome{
+            top: 40%;
+            display: inline;
+            position: absolute;
+            background-color: rgba(165, 42, 42, 0);
+            margin-left: 1%;
         }
-        .mens input{
-            border-radius: 50px;
-            width: 80%;
-            
+        .fa-gear{
+            background-color: rgba(210, 105, 30, 0);
+            position: absolute;
+            top: 25%;
+            right: 1%;
+            font-size: 2em;
         }
-
-        .chat{
-        
-        }
-        .chat p{
-          background-color: #111; 
-          border-radius: 10px 10px 20px 10px;
-          margin: 1%;
-          padding: 2%; 
-        }
-        button{
-            padding: 1%;
-            border-radius: 100px;
+        /* -- FOOTER -- */
+        .caixa-mens{
+            border: 1px solid #000;
         }
     </style>
 </head>
 <body>
-    <main class="box1">
-       <img src="imagens/avatar_amigo.png" alt="">
-       <p class="txt1">Nome</p>
-       <p class="txt2"><i class="fa-solid fa-gear"></i></p>
-       <section class="chat">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas nihil, voluptatum numquam culpa corporis optio libero maiores voluptatem, atque molestias tempore dolorum amet blanditiis ab! Autem quaerat esse sit ipsum!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis veritatis quae labore ab unde ipsum! Architecto unde numquam rem asperiores tempora vero fugit distinctio, deleniti, amet esse expedita possimus. Accusamus!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, velit non corporis a sapiente consequuntur commodi in nostrum ut? Dolorum ipsam possimus voluptatem veritatis excepturi, quia totam quisquam dolorem nam.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem molestias ducimus veritatis qui quod adipisci delectus? Modi deserunt numquam repudiandae dolorum ipsum fugit adipisci accusamus! Eligendi laborum enim consequatur explicabo.</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut perspiciatis laboriosam saepe itaque adipisci? In laudantium esse quam nulla dolores provident doloremque. Soluta ad incidunt eligendi dolores amet expedita libero.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium error recusandae amet deleniti fugiat mollitia impedit, totam eveniet est rerum quaerat doloremque quidem explicabo corporis consectetur non eius nulla incidunt.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, quos! Sequi qui praesentium doloribus. Quia ab labore, earum beatae adipisci quaerat aliquid laborum explicabo ducimus cumque repellat velit libero. Ad.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas nihil, voluptatum numquam culpa corporis optio libero maiores voluptatem, atque molestias tempore dolorum amet blanditiis ab! Autem quaerat esse sit ipsum!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis veritatis quae labore ab unde ipsum! Architecto unde numquam rem asperiores tempora vero fugit distinctio, deleniti, amet esse expedita possimus. Accusamus!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, velit non corporis a sapiente consequuntur commodi in nostrum ut? Dolorum ipsam possimus voluptatem veritatis excepturi, quia totam quisquam dolorem nam.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem molestias ducimus veritatis qui quod adipisci delectus? Modi deserunt numquam repudiandae dolorum ipsum fugit adipisci accusamus! Eligendi laborum enim consequatur explicabo.</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut perspiciatis laboriosam saepe itaque adipisci? In laudantium esse quam nulla dolores provident doloremque. Soluta ad incidunt eligendi dolores amet expedita libero.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium error recusandae amet deleniti fugiat mollitia impedit, totam eveniet est rerum quaerat doloremque quidem explicabo corporis consectetur non eius nulla incidunt.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, quos! Sequi qui praesentium doloribus. Quia ab labore, earum beatae adipisci quaerat aliquid laborum explicabo ducimus cumque repellat velit libero. Ad.</p>
-    </section>
-    <footer class="mens">
-        <input type="text">
-        <button>>></button>
-    </footer>
-    </main> 
+    <main class="chat">
+        <header class="cabecalho">
+            <img src="imagens/avatar_amigo.png" alt="Foto do perfil">
+            <p class="nome">Nome</p>
+            <p><i class="fa-solid fa-gear"></i></p>
+        </header>
+        <section class="conteudo">
+            <p class="dir">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis tenetur minima, eos error quod, quas voluptate molestias nostrum dolorem dolores ad! Placeat debitis ipsa dicta soluta. Repellendus deserunt dolore ad.</p>
+            <p class="esq">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam odio necessitatibus corrupti aliquid repudiandae fugit consectetur alias possimus eum nihil excepturi rerum ullam ea quasi, nobis repellat labore veritatis sunt.</p>
+        </section>
+        <footer>
+            <input class="caixa-mens" type="text">
+            <button type="submit">
+                <i class="fa-solid fa-paper-plane"></i>
+            </button>
+        </footer>
+    </main>
 </body>
 </html>
