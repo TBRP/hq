@@ -58,6 +58,10 @@
             top: 25%;
             right: 1%;
             font-size: 2em;
+            transition: 1s;
+        }
+        .fa-gear:hover{
+            color: crimson;
         }
         /* -- CHAT -- */
         .conteudo{
@@ -85,16 +89,39 @@
         /* -- FOOTER -- */
         .bloco-mens{
             position: fixed;
-            background-color: #000;
-            padding: 2%;
+            background-image: url('imagens/bg_chat.jpg');
+            background-repeat: repeat;
+            background-attachment: fixed;
+            background-size: contain;
+            padding: 1%;
             width: 100%;
             bottom: 0;
         }
         .caixa-mens{
             border-radius: 100px;
-            padding: 2%;
-            width: 80%;
+            padding: 3%;
+            width: 86%;
             background-color: #999;
+            color:#000;
+            transition: 1s;
+        }
+        .caixa-mens:hover{
+            background-color: #fff;
+        }
+        .btn{
+            width: 10%;
+            font-size: 2em;
+            padding: 1%;
+            border-radius: 100px;
+            bottom: 0px;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            transition: 1s;
+        }
+        .btn:hover{
+            color: crimson;
+            transform: rotate(360deg);
         }
     </style>
 </head>
@@ -114,8 +141,8 @@
             <p class="esq dialogo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam odio necessitatibus corrupti aliquid repudiandae fugit consectetur alias possimus eum nihil excepturi rerum ullam ea quasi, nobis repellat labore veritatis sunt.</p>
         </section>
         <footer class="bloco-mens">
-            <input class="caixa-mens" type="text" >
-            <button type="submit">
+            <input class="caixa-mens" type="text" placeholder="Mensagem">
+            <button class="btn" type="submit">
                 <i class="fa-solid fa-paper-plane"></i>
             </button>
         </footer>
