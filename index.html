@@ -26,6 +26,12 @@
             color: #fff;
             font-family: sans-serif;
             font-size: 1em;
+            animation-name: aparecer-body;
+            animation-duration: 2s;
+        }
+        @keyframes aparecer-body{
+            0%{opacity: 0;}
+            100%{opacity: 100%;}
         }
         /* -- MAIN -- */
         main.chat{
@@ -69,6 +75,7 @@
             top: 12%;
             position: absolute;
             padding: 1% 1% 10% 1%;
+            
         }
         .dialogo{
             padding: 2%;
@@ -143,11 +150,16 @@
             <p class="esq dialogo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam odio necessitatibus corrupti aliquid repudiandae fugit consectetur alias possimus eum nihil excepturi rerum ullam ea quasi, nobis repellat labore veritatis sunt.</p>
             <p class="dir dialogo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis tenetur minima, eos error quod, quas voluptate molestias nostrum dolorem dolores ad! Placeat debitis ipsa dicta soluta. Repellendus deserunt dolore ad.</p>
             <p class="esq dialogo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam odio necessitatibus corrupti aliquid repudiandae fugit consectetur alias possimus eum nihil excepturi rerum ullam ea quasi, nobis repellat labore veritatis sunt.</p>
+            <p class="dir dialogo">
+                <audio controls>
+                    <source src="audios/audio.mp3">
+                </audio>                             
+            </p>
         </section>
         <footer class="bloco-mens">
             <input class="caixa-mens" type="text" placeholder="Mensagem">
             <button class="btn" type="submit">
-                <i class="fa-solid fa-paper-plane">.</i>
+                <i class="fa-solid fa-paper-plane"></i>
             </button>
         </footer>
     </main>
