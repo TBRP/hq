@@ -22,49 +22,64 @@
             font-family: sans-serif;
             position: relative;
         }
-        .box1{
-            background: #555;
-            position: relative;
-            padding: 2%;
-        }
-        .avatar{
-            background-color: blueviolet;
-            border-radius: 1000px;
-            width: 7%;
-            display: block;
-            transition: 2s;
-        }
-        .nome{
-            background-color: rgba(255, 0, 0, 0);
-            position: absolute;
-            display: inline;
-            height: 50%;
-            top: 25%;
-            left: 10%;
-            font-size: 1em;
-        }
-        .online{
-            font-size: .7em;
-        }
-        .fa-gear{
-            display: inline;
-            position: absolute;
-            right: 0;
-            background-color: aquamarine;
-            top: 20%;
-            font-size: 2em;
-        }
+       p{
+           padding: 2%;
+           background-color: #000;
+           margin: 2%;
+           border-radius: 20px;
+       }
+       .p1{
+        animation-name: aparece1;
+        animation-duration: 1s;
+       }
+       @keyframes aparece1{
+            0%{opacity: 0;}
+            95%{opacity: 0;}
+            100%{opacity: 1;}
+       }
+       .p2{
+           animation-name: aparece2;
+           animation-duration: 5s;
+       }
+       @keyframes aparece2{
+           0%{opacity: 0;}
+           95%{opacity: 0;}
+           100%{opacity: 1;}
+       }
+       .p3{
+           animation-name: aparece3;
+           animation-duration: 10s;
+       }
+       @keyframes aparece3{
+           0%{opacity: 0;}
+           95%{opacity: 0;}
+           100%{opacity: 1;}
+       }
+       .p4{
+           animation-name: aparece4;
+           animation-duration: 12s;
+       }
+       @keyframes aparece4{
+           0%{opacity: 0;}
+           95%{opacity: 0;}
+           100%{opacity: 1;}
+       }
     </style>
 </head>
 <body>
-    <div class="box1">
-        <img class="avatar" src="imagens/avatar_amigo.png" alt="">
-        <p class="nome">Nome <br>
-            <span class="online">OnLine</span>
+    <main>
+        <p class="p1">
+            Eae cara, blz?
         </p>
-        <p>
-            <i class="fa-solid fa-gear"></i>
+        <p class="p2">
+            Tudo certo, e vc, como está?
         </p>
-    </div> 
+        <p class="p3">
+            Bem tmabém.
+        </p>
+        <p class="p4">
+            Te falei ontem que ia gravar um som com minha banda. Lembra?
+        </p>
+    </main>
 </body>
 </html>
