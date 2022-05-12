@@ -75,23 +75,36 @@
             top: 12%;
             position: absolute;
             padding: 1% 1% 15% 1%;
-            
+            width: 100%;
         }
         .dialogo{
-            padding: 2%;
+            padding: 4%;
             margin-bottom: 1%;
             box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.39);
-            width: 70%;
+            display: inline-block;
+            max-width: 70%;
+        }
+        .base-p{
+            width: 100%;
+        }
+        .base-p-dir{
+            text-align: right;
         }
         .dir{
             background-color: #000;
-            border-radius: 25px 25px 0px 25px;
-            position: relative;
-            right: -30%;
+            border-radius: 25px 20px 0px 25px;
+            text-align: left;
+           /** position: relative;
+            right: -30%; */
         }
         .esq{
             background-color: rgb(82, 16, 0);
-            border-radius: 25px 25px 25px 0;
+            border-radius: 20px 25px 25px 0;
+        }
+        .audioP{
+            background-color: #f1f3f4;
+            border: 5px solid rgb(82, 16, 0);
+            max-width: 100%;
         }
         /* ====== ANIM CHAT ====== */
         .p1{
@@ -226,9 +239,6 @@
             background-color: #000;
             transform: rotate(360deg);
         }
-        audio{
-            width: 100%;
-        }
     </style>
 </head>
 <body>
@@ -238,23 +248,44 @@
             <p class="nome">Nome</p>
             <p><i class="fa-solid fa-gear"></i></p>
         </header>
+        <!-- CONTEUDO -->
         <section class="conteudo">
-            <p class="esq dialogo p1">Eae cara, blz?</p>
-            <p class="dir dialogo p2">Tudo ok, e vc como está?</p>
-            <p class="esq dialogo p3">Suave na nave.</p>
-            <p class="esq dialogo p4">Gravei um som com minha banda, ontem a tarde. Vou te mandar, espera aí</p>
-            <p class="dir dialogo p5">FINALMENTE. Faz um século que fala de gravar e nunca grava</p>
-            <p class="esq dialogo p6">Calma o apressadinho</p>
-            <p class="esq dialogo p7">
+            <div class="base-p">
+                <p class="esq dialogo p1">Eae cara, blz?</p>
+            </div>
+            <div class="base-p base-p-dir">
+                <p class="dir dialogo p2">Tudo ok, e vc como está?</p>
+            </div>
+            <div class="base-p">
+                <p class="esq dialogo p3">Suave na nave.</p>
+            </div>
+            <div class="base-p">    
+                <p class="esq dialogo p4">Gravei um som com minha banda, ontem a tarde. Vou te mandar, espera aí</p>
+            </div>    
+            <div class="base-p base-p-dir">
+                <p class="dir dialogo p5">FINALMENTE. Faz um século que fala de gravar e nunca grava</p>
+            </div>
+            <div class="base-p">
+                <p class="esq dialogo p6">Calma o apressadinho</p>
+            </div>
+            <div class="base-p">
+                <p class="esq dialogo audioP p7">
                 <audio controls>
                     <source src="audios/audio.mp3">
                 </audio>                             
-            </p>
-            <p class="esq dialogo p8">
-                Oque achou??                            
-            </p>
+                </p>
+            </div>
+            <div class="base-p">
+                <p class="esq dialogo p8">
+                    Oque achou??                            
+                </p>
+            </div>   
+            <div class="base-p base-p-dir">
             <p class="dir dialogo p9">Haa cara, vc sabe que eu não entendo nada de música. Mas achei da hora.</p>
+            </div>
+            <div class="base-p base-p-dir">
             <p class="dir dialogo p10">Na verdade acho muito legal essa coisa de tocar um instrumento. Queria muito aprender algum</p>
+            </div>
         </section>
         <footer class="bloco-mens">
             <input class="caixa-mens" type="text" placeholder="Mensagem">
