@@ -106,7 +106,7 @@
             border: 5px solid rgb(82, 16, 0);
             max-width: 100%;
         }
-        /* ====== ANIM CHAT ====== */
+        /* ====== ANIM CHAT ====== 
         .p1{
             animation-name: ap1;
             animation-duration: 2s;
@@ -205,14 +205,14 @@
             background-repeat: repeat;
             background-attachment: fixed;
             background-size: contain;
-            padding: 1%;
+            padding-bottom: 1%;
             width: 100%;
-            bottom: 0;
+            bottom: 0%;
             text-align: center;
         }
         .caixa-mens{
             border-radius: 100px;
-            padding: 3%;
+            padding: 1.5%;
             width: 80%;
             background-color: #999;
             color:#000;
@@ -222,7 +222,15 @@
         .caixa-mens:hover{
             background-color: #fff;
         }
-        .btn{
+        .fa-paper-plane{
+            background-color: crimson;
+            padding: 1.5%;
+            font-size: 1em;
+            border-radius: 100px;
+            margin-left: 1%;
+            cursor: pointer;
+        }
+     /*   .btn{
                     font-size: 1.5em;
             padding: 2%;
             border-radius: 1000px;
@@ -239,10 +247,12 @@
             background-color: #000;
             transform: rotate(360deg);
         }
+        */
     </style>
 </head>
 <body>
     <main class="chat">
+        <!-- HEADER -->
         <header class="cabecalho">
             <img class="avatar-amigo" src="imagens/avatar_amigo.png" alt="Foto do perfil">
             <p class="nome">Nome</p>
@@ -287,11 +297,12 @@
             <p class="dir dialogo p10">Na verdade acho muito legal essa coisa de tocar um instrumento. Queria muito aprender algum</p>
             </div>
         </section>
+        <!-- footer -->
         <footer class="bloco-mens">
             <input class="caixa-mens" type="text" placeholder="Mensagem">
-            <button class="btn" type="submit">
+           <!-- <button class="btn" type="submit"> -->
                 <i class="fa-solid fa-paper-plane"></i>
-            </button>
+          <!--  </button> -->
         </footer>
     </main>
 </body>
