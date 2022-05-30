@@ -11,58 +11,283 @@
             padding: 0;
             box-sizing: 0;
         }
+        html{
+            height: 100vh;
+        }
         body{
-            height: 100%;
+            height: 100vh;
             font-family: sans-serif;
             text-align: center;
             color: #fff;
             background-color: #222;
         }
+        header{
+            display: table;
+            width: 100%;
+        }
+        h1{
+            display: table-cell;
+            vertical-align: middle;
+            font-size: 3.5em;
+            text-shadow: 1px 2px 2px #000;
+        }
+        h2{
+            display: table-cell;
+            vertical-align: middle;
+            font-size: 2.5em;
+            text-shadow: 1px 2px 2px #000;
+        }
         .cabecalho-principal{
-            padding: 4%;
+            height: 100vh;
             background-color: #000;
+            background-image: url('https://images.unsplash.com/photo-1588032786045-59cefda005c0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=888&q=80');
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
         }
         .cabecalho-bateristas{
-            padding: 4%;
+            background-size: cover;
+            height: 100vh;
+            background-attachment: fixed;
         }
-        section{
-            margin-bottom: 4%;
+        .gene{
+            background-image: url('https://ichef.bbci.co.uk/images/ic/640x360/p01l3g41.jpg');
         }
-        article{
-           height: 50%; 
+        .buddy{
+            background-image: url('https://i.pinimg.com/564x/3e/2c/56/3e2c560bb0a26ffd540487211d6ea5e1.jpg');
         }
-        img, .video{
-           width: 90%; 
+        .bby{
+            background-image: url('https://media.gettyimages.com/photos/photo-of-baby-dodds-playing-the-drums-in-1945-picture-id97966228?s=2048x2048');
+        }
+        .elvin{
+            background-image: url('https://wallpapercave.com/wp/wp8756240.jpg');
+        }
+        .papa{
+            background-image: url('https://www.drummerworld.com/drummerworld/papajojones840.jpg');
+        }
+        .max{
+            background-image: url('https://c4.wallpaperflare.com/wallpaper/114/93/272/max-roach-drum-glasses-shirt-wallpaper-preview.jpg');
+        }
+        .tonny{
+            background-image: url('https://p4.wallpaperbetter.com/wallpaper/516/45/279/tony-williams-jacket-tie-mustache-wallpaper-preview.jpg');
+        }
+        .jim{
+            background-image: url('https://www.drummerworld.com/pics/drumpics31/jimchapinfund.jpg');
+        }
+        .moeller{
+            background-image: url('https://www.drumforum.org/attachments/sanford-moeller-jpg.138838/');
+        }
+        .starr{
+            background-image: url('https://gettyimagesgallery.com/wp-content/uploads/2019/01/GettyImages-78970687.jpg');
+        }
+        .moon{
+            background-image: url('https://cdn.wallpapersafari.com/25/22/7PzT4W.jpeg');
+        }
+        .bonham{
+            background-image: url('https://ogimg.infoglobo.com.br/in/2909110-df0-4b3/FT1086A/Bonham-lembranca.jpg');
+        }
+        .baker{
+            background-image: url('https://muligo.com/wp-content/uploads/2019/10/Ginger_Baker-1024x768.jpg');
+        }
+        .ballson{
+            background-image: url('https://www.gretschdrums.com/sites/default/files/artists-gallery/Bellson_Louie-Image1.jpg?width=768&height=701');
+        }
+        .weckl{
+            background-image: url('https://theconcertdatabase.com/sites/theconcertdatabase.com/files/dw_3.jpg');
+        }
+        .colaiuta{
+            background-image: url('https://usercontent.one/wp/leicesterdrumschool.co.uk/wp-content/uploads/2019/07/vc-2.jpeg?media=1641884953');
+        }
+        .bozzio{
+            background-image: url('https://i.pinimg.com/564x/34/6a/93/346a93da47523de04a5a310b0c051695.jpg');
+        }
+        .portnoy{
+            background-image: url('https://www.drummerworld.com/drummerworld2/mikeportnoy840fg.jpg');
+        }
+        .chambers{
+            background-image: url('https://www.jazzmusicarchives.com/images/artists/dennis-chambers-20180930114734.jpg');
+        }
+        .peart{
+            background-image: url('https://images6.fanpop.com/image/photos/32100000/-Neil-Peart-greatest-rock-drummers-32173883-800-600.jpg');
+        }
+        iframe{
+            width: 100%;
+            height: 100vh;
         }
     </style>
 </head>
 <body>
+    <main>
     <section>
         <header class="cabecalho-principal">
             <h1>Grandes Bateristas</h1>
         </header>
+    </section> 
+  <!--  <section>     
+        <header class="cabecalho-bateristas gene">
+            <h2>Gene Krupa</h2>
+        </header>
+        <article class="video">
+            <iframe src="https://www.youtube.com/embed/3mJ4dpNal_k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </article>
     </section>  
     <section>     
-        <header class="cabecalho-bateristas">
-            <h2>Nome do baterista</h2>
+        <header class="cabecalho-bateristas buddy">
+            <h2>Buddy Rich</h2>
         </header>
-        <article class="foto">
-            <img src="https://roadiecrew.com/wp-content/uploads/Mike.jpg" alt="">
+        <article class="video">
+            <iframe src="https://www.youtube.com/embed/9esWG6A6g-k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </article>
-        <article class="videos">
-            <iframe class="video" src="https://www.youtube.com/embed/FdJg9AuTvvs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section> 
+    <section>     
+        <header class="cabecalho-bateristas bby">
+            <h2>Bby Dodds</h2>
+        </header>
+        <article class="video">
+            <iframe width="599" height="449" src="https://www.youtube.com/embed/R6N-A3owHDk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </article>
+    </section>   
+    <section>     
+        <header class="cabecalho-bateristas elvin">
+            <h2>Elvin Jones</h2>
+        </header>
+        <article class="video">
+            <iframe width="599" height="449" src="https://www.youtube.com/embed/JWQjqWiGzh8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </article>
+    </section>  
+    <section>     
+        <header class="cabecalho-bateristas papa">
+            <h2>Jo Jones</h2>
+        </header>
+        <article class="video">
+            <iframe width="790" height="444" src="https://www.youtube.com/embed/fxtik6ektQY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </article>
+    </section>  
+    <section>     
+        <header class="cabecalho-bateristas max">
+            <h2>Max Roach</h2>
+        </header>
+        <article class="video">
+            <iframe width="568" height="426" src="https://www.youtube.com/embed/FhdBW_siCFg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </article>
+    </section>   
+    <section>     
+        <header class="cabecalho-bateristas tonny">
+            <h2>Tonny Williams</h2>
+        </header>
+        <article class="video">
+            <iframe width="599" height="449" src="https://www.youtube.com/embed/K2Mtm4134D4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </article>
+    </section>  
+    <section>     
+        <header class="cabecalho-bateristas jim">
+            <h2>Jim Chapin</h2>
+        </header>
+        <article class="video">
+            <iframe width="568" height="426" src="https://www.youtube.com/embed/dWI4c_7C78g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </article>
+    </section>  
+    <section>     
+        <header class="cabecalho-bateristas moeller">
+            <h2>Sanford Moeller</h2>
+        </header>
+        <article class="video">
+            <iframe width="584" height="438" src="https://www.youtube.com/embed/DD-2eHrl59U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </article>
+    </section>  
+    <section>     
+        <header class="cabecalho-bateristas starr">
+            <h2>Ringo Starr</h2>
+        </header>
+        <article class="video">
+            <iframe width="790" height="444" src="https://www.youtube.com/embed/0mx48CPaQFo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </article>
+    </section>  
+    <section>     
+        <header class="cabecalho-bateristas moon">
+            <h2>Keith Moon</h2>
+        </header>
+        <article class="video">
+            <iframe width="790" height="444" src="https://www.youtube.com/embed/vCupJpymgfE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </article>
+    </section>  
+    <section>     
+        <header class="cabecalho-bateristas bonham">
+            <h2>John Bonham</h2>
+        </header>
+        <article class="video">
+            <iframe width="568" height="426" src="https://www.youtube.com/embed/IOb8otk7Y0U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </article>
+    </section>  
+    
+    <section>   
+        <header class="cabecalho-bateristas baker">
+            <h2>Ginger Baker</h2>
+        </header>
+        <article class="video">
+            <iframe width="599" height="449" src="https://www.youtube.com/embed/R0hQn91fXOM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </article>
     </section>
     <section>     
-        <header class="cabecalho-bateristas">
-            <h2>Nome do baterista</h2>
+        <header class="cabecalho-bateristas ballson">
+            <h2>Louie Ballson</h2>
         </header>
-        <article class="foto">
-            <img src="https://roadiecrew.com/wp-content/uploads/Mike.jpg" alt="">
-        </article>
-        <article class="videos">
-            <iframe class="video" src="https://www.youtube.com/embed/FdJg9AuTvvs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <article class="video">
+            <iframe width="568" height="426" src="https://www.youtube.com/embed/boNDmD9QrPk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
         </article>
     </section>
+    <section>     
+        <header class="cabecalho-bateristas weckl">
+            <h2>Dave Weckl</h2>
+        </header>
+        <article class="video">
+            <iframe width="568" height="426" src="https://www.youtube.com/embed/tdGDcVHcFjo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </article>
+    </section>
+
+    <section>     
+        <header class="cabecalho-bateristas colaiuta">
+            <h2>Vinnie Colaiuta</h2>
+        </header>
+        <article class="video">
+            <iframe width="568" height="320" src="https://www.youtube.com/embed/focHXC5TaKI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </article>
+    </section>
+        <section>     
+        <header class="cabecalho-bateristas bozzio">
+            <h2>Terry Bozzio</h2>
+        </header>
+        <article class="video">
+            <iframe width="568" height="320" src="https://www.youtube.com/embed/tsvPU2Ab14k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </article>
+    </section>
+    <section>     
+        <header class="cabecalho-bateristas portnoy">
+            <h2>Mike Portnoy</h2>
+        </header>
+        <article class="video">
+            <iframe width="790" height="444" src="https://www.youtube.com/embed/HqttA8iQzyo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </article>
+    </section>
+    -->
+
+     <section>     
+        <header class="cabecalho-bateristas chambers">
+            <h2>Dennis Chambers</h2>
+        </header>
+        <article class="video">
+            <iframe width="790" height="444" src="https://www.youtube.com/embed/tc6QtAg1x7o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </article>
+    </section>
+    <section>     
+        <header class="cabecalho-bateristas peart">
+            <h2>Neil Peart</h2>
+        </header>
+        <article class="video">
+            <iframe width="790" height="444" src="https://www.youtube.com/embed/nICgCOJ7BS8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </article>
+    </section>
+</main>
 </body>
 </html>
